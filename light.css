@@ -1,3 +1,11 @@
+#js {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
 body {
   background-color:#000;
   color:#FFF;
