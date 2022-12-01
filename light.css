@@ -1,0 +1,49 @@
+body {
+  background-color:#000;
+  color:#FFF;
+}
+
+.hall, .room {
+  background: #999;
+  position:absolute;
+  z-index: 2;
+}
+
+.room {
+  border-top: 0.75em solid #666;
+  width: 6em; height:5.25em;
+}
+
+
+#maze { top: 0; left: 0; position:absolute; display:none; }
+#r1 { top: 2em; left: 2em; }
+#r2 { top: 2em; left: 10em; }
+#r3 { top: 10em; left: 10em; }
+#r4 { top: 2em; left: 18em; }
+#r5 { top: 10em; left: 18em; }
+#r6 { top: 2em; left: 26em; }
+#r7 { top: 10em; left: 26em; }
+
+#h1 { top: 4em; left: 8em; width: 18em; height:1.25em; }
+#h2 { top: 8em; left: 12em; width: 2em; height:2.75em; }
+#h3 { top: 8em; left: 20em; width: 2em; height:2.75em; }
+#h4 { top: 8em; left: 28em; width: 2em; height:2.75em; }
+
+#h1 { border-top: 0.75em solid #666; }
+
+.chest {
+  top: 1em; left: 1.6em;
+  width: 1.6em; height:1.6em;
+  border: 0.1em solid #666;
+  background: #FF9;
+  overflow: hidden;
+  position:absolute;
+  text-align: center;
+  color: #000;
+  font-size:1.25em;
+}
+
+#r1:hover+#maze, #maze:hover,
+#c1:hover+#m1, #m1:hover,
+#c2:hover+#m2, #m2:hover,
+#c3:hover+#m3, #m3:hover { display: block; }

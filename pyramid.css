@@ -1,0 +1,51 @@
+body {
+  background-color:#000;
+  color:#FFF;
+}
+
+.hall {
+  border-top: 0.75em solid #C52;
+  background: #FD5;
+  z-index: 2;
+}
+
+
+
+#h1 { top: 2em; left: 2em; width: 6em; height:5.25em; position: absolute; }
+
+#bad { top: 4em; left: 20em; position:absolute; display:none; z-index: 1; }
+#bad1 { top: 0; left: 0; width: 2em; height:1.25em; }
+#bad2 { top: 4em; left: 12em; width: 2em; height:1.25em; }
+#bad3 { top: 20em; left: 6em; width: 8em; height:1.25em; }
+#bad4 { top: 4em; left: 4em; width: 2em; height:1.25em; }
+
+#maze { top: 4em; left: 8em; position:absolute; display:none; }
+#h2 { top: 0; left: 0; width: 2em; height:12em; }
+#h3 { top: 0; left: 0; width: 12em; height:1.25em; }
+#h4 { top: 12em; left: 0; width: 2em; height:1.25em; }
+#h4:hover { width: 8em; }
+#h5 { top: 0; left: 14em; width: 6em; height:1.25em; }
+#h6 { top: 12em; left: 8em; width: 16em; height:1.25em; }
+#h7 { top: 0; left: 18em; width: 2em; height:12em; }
+#h8 { top: 4em; left: 8em; width: 2em; height:8em; }
+#h9 { top: 4em; left: 22em; width: 2em; height:9.25em; }
+#h10 { top: 4em; left:8em; width: 2em; height:1.25em; }
+#h10:hover { width: 6em; }
+#h11 { top: 4em; left:14em; width: 2em; height:1.25em; }
+#h11:hover { height: 16em; }
+#h12 { top: 4em; left:26em; width: 2em; height:17.25em; }
+#h13 { top: 16em; left: 14em; width: 14em; height:1.25em; }
+#room { top: 20em; left: 12em; width: 6em; height:5.25em; }
+
+#chest {
+  top: 1.25em; left: 2em;
+  width: 1.5em; height:1.5em;
+  border: 0.25em outset #b41;
+  background: #B41;
+}
+
+#h2, #h3, #h4, #h5, #h6, #h7, #h8, #h9, #h10, #h11, #h12, #h13, #room, #button, #bad1, #bad2, #bad3, #bad4, #chest { position:absolute; }
+
+#h1:hover+#maze, #maze:hover,
+#h1:hover+#maze+#bad, #maze:hover+#bad, #bad:hover,
+#chest:hover+#m1, #m1:hover { display: block; }
